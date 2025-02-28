@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # Streamlit App Title
 st.title("🌱 Growth Habit Tracker")
 
-# Habit List
+# Sidebar for Habit Selection
+st.sidebar.title("📌 Select Your Habits")
 habits = ["Learn something new", "Write self-reflection", "Accept challenges", "Read a book", "Exercise"]
-selected_habits = st.multiselect("Select your habits:", habits, default=habits[:2])
+selected_habits = st.sidebar.multiselect("Select your habits:", habits, default=habits[:2])
 
 # Data Storage (Session State)
 if "habit_data" not in st.session_state:
