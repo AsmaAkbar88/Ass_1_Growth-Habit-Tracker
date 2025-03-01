@@ -40,7 +40,7 @@ max_length = max(len(v) for v in st.session_state.habit_data.values())
 for habit in st.session_state.habit_data:
     while len(st.session_state.habit_data[habit]) < max_length:
         st.session_state.habit_data[habit].append(0)
-         st.write("⛔ **Created by Asma Akbar**")
+         
 
 # Reset Data
 if st.button("Reset Progress"):
