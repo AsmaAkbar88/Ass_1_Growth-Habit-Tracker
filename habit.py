@@ -47,4 +47,7 @@ if st.button("Reset Progress"):
     st.session_state.clear()  
     st.success("Progress Reset Successfully!")
     st.rerun() 
+    # Footer
+st.write("⛔ **Created by Asma Akbar**")
+
    
