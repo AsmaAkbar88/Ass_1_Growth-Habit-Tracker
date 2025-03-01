@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="🌱 Growth Habit", layout="wide" ,page_icon = "✤")
+st.set_page_config(page_title="✤ Growth Habit", layout="wide" )
 
 # Title
 st.title("🌱 Growth Habit Tracker")
@@ -39,11 +39,12 @@ for habit in selected_habits:
 max_length = max(len(v) for v in st.session_state.habit_data.values())  
 for habit in st.session_state.habit_data:
     while len(st.session_state.habit_data[habit]) < max_length:
-        st.session_state.habit_data[habit].append(0)  
+        st.session_state.habit_data[habit].append(0)
+         st.write("⛔ **Created by Asma Akbar**")
 
 # Reset Data
 if st.button("Reset Progress"):
     st.session_state.clear()  
     st.success("Progress Reset Successfully!")
     st.rerun() 
-    st.write("⛔ **Created by Asma Akbar**")
+   
