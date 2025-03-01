@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="🌱 Growth Habit", layout="wide")
+st.set_page_config(page_title="🌱 Growth Habit", layout="wide" ,project_icon = "✤")
 
 # Title
 st.title("🌱 Growth Habit Tracker")
@@ -46,3 +46,4 @@ if st.button("Reset Progress"):
     st.session_state.clear()  
     st.success("Progress Reset Successfully!")
     st.rerun() 
+    st.write("🌟**Created by Asma Akbar**")
