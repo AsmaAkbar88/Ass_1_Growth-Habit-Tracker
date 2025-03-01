@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(page_title="✤ Growth Habit", layout="wide" )
 
 # Title
-st.title("🌱 Growth Habit Tracker")
+st.title(" Growth Habit Tracker")
 st.header("🌱  Welcome to the Growth Habit Tracker Challenge! ")
 
 
